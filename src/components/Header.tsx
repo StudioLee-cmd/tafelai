@@ -31,7 +31,7 @@ const Header: React.FC = () => {
                             alt={siteDetails.siteName}
                             width={400}
                             height={120}
-                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 h-[280%] w-auto max-w-none object-contain"
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[150%] w-auto max-w-none object-contain"
                         />
                     </Link>
 

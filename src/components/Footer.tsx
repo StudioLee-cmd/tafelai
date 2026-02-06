@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                             alt={siteDetails.siteName}
                             width={300}
                             height={100}
-                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 h-[280%] w-auto max-w-none object-contain"
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[150%] w-auto max-w-none object-contain"
                         />
                     </Link>
                     <p className="mt-3.5 text-foreground-accent">
