@@ -14,7 +14,7 @@ const SetupSupport: React.FC = () => {
                         Hulp nodig bij de installatie?
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
-                        Start met een gratis strategiesessie (15 min). We leggen uit hoe je alles <strong className="dark:text-white">zelf instelt</strong>, of bespreken een volledige <strong className="dark:text-white">'Done-For-You' setup</strong> op maat.
+                        Start met een gratis strategiesessie (15 min). We leggen uit hoe je alles <strong className="dark:text-white">zelf instelt</strong>, of bespreken een volledige <strong className="dark:text-white">&apos;Done-For-You&apos; setup</strong> op maat.
                     </p>
                 </div>
             </div>

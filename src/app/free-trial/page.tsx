@@ -8,17 +8,15 @@ import Container from '@/components/Container';
 const N8N_WEBHOOK_URL = "JOUW_N8N_WEBHOOK_URL_HIER";
 
 const NICHE_OPTIONS = [
-    "Dakdekkers",
-    "Aannemers",
-    "Installateurs",
-    "Schilders",
-    "Stukadoors",
-    "Glazenwassers",
-    "Hoveniers",
-    "Schoonmaakbedrijven",
-    "Kappers",
-    "Beauty & Nagel Salons",
-    "Restaurants",
+    "Restaurant",
+    "Café",
+    "Lunchroom",
+    "Brasserie",
+    "Hotel-Restaurant",
+    "Strandtent",
+    "Pizzeria",
+    "Sushi Restaurant",
+    "Fast Food",
     "Overig"
 ];
 
@@ -27,7 +25,7 @@ const FreeTrialPage = () => {
     const [formData, setFormData] = useState({
         email: '',
         businessName: '',
-        niche: 'Dakdekkers',
+        niche: 'Restaurant',
         termsAccepted: false,
     });
     const [isLoading, setIsLoading] = useState(false);
@@ -154,7 +152,7 @@ const FreeTrialPage = () => {
                                     value={formData.businessName}
                                     onChange={handleChange}
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900"
-                                    placeholder="Jouw Dakdekkersbedrijf"
+                                    placeholder="Jouw Restaurant"
                                     disabled={isLoading}
                                 />
                             </div>
@@ -228,8 +226,8 @@ const FreeTrialPage = () => {
                     {/* Footer Note */}
                     <p className="text-center text-sm text-gray-500 mt-6">
                         Heb je vragen? Neem contact met ons op via{' '}
-                        <a href="mailto:Info@dakdekkerai.nl" className="text-blue-600 hover:text-blue-700 font-medium">
-                            Info@dakdekkerai.nl
+                        <a href="mailto:tim@tafelai.nl" className="text-blue-600 hover:text-blue-700 font-medium">
+                            tim@tafelai.nl
                         </a>
                     </p>
                 </div>

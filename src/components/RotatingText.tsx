@@ -7,14 +7,14 @@ import React, {
     useMemo,
     useState,
 } from "react";
-import { motion, AnimatePresence, Transition, Variant } from "framer-motion";
+import { motion, AnimatePresence, Transition } from "framer-motion";
 
 export interface RotatingTextProps {
     texts: string[];
     transition?: Transition;
-    initial?: any;
-    animate?: any;
-    exit?: any;
+    initial?: object;
+    animate?: object;
+    exit?: object;
     animatePresenceMode?: "sync" | "wait" | "popLayout";
     staggerDuration?: number;
     staggerFrom?: "first" | "last" | "center" | "random" | number;

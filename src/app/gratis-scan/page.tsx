@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BsGlobe, BsPerson, BsEnvelope, BsCheckCircleFill } from "react-icons/bs";
 
 // Separate component to handle search params securely within Suspense
-const ScanForm = ({ onStartScan }: { onStartScan: (data: any) => void }) => {
+const ScanForm = ({ onStartScan }: { onStartScan: (data: { name: string; website: string; email: string; struggles: string }) => void }) => {
     const searchParams = useSearchParams();
 
     // State for form fields
@@ -148,7 +148,7 @@ const ScanForm = ({ onStartScan }: { onStartScan: (data: any) => void }) => {
 export default function GratisScanPage() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const startScan = (data: any) => {
+    const startScan = (data: { name: string; website: string; email: string; struggles: string }) => {
         setIsModalOpen(true);
         // Here you would typically trigger the webhook/n8n workflow
         console.log("Starting scan with data:", data);
@@ -165,7 +165,7 @@ export default function GratisScanPage() {
                             Gratis AI & SEO Scan
                         </h1>
                         <p className="text-lg text-gray-600 dark:text-gray-300">
-                            We brengen in kaart hoe je scoort ten opzichte van concurrenten, waar je kansen laat liggen en hoe ons systeem je direct vooruit helpt.
+                            We brengen in kaart hoe je scoort ten opzichte van andere restaurants, waar je kansen laat liggen en hoe ons systeem je direct vooruit helpt.
                         </p>
                     </div>
 
@@ -221,7 +221,7 @@ export default function GratisScanPage() {
 
                             <div className="p-6 bg-gray-50 dark:bg-gray-800 flex justify-between items-center">
                                 <p className="text-gray-600 dark:text-gray-400 text-sm italic">
-                                    "Terwijl de AI je site analyseert: Hoe dit systeem werkt."
+                                    {`"Terwijl de AI je site analyseert: Hoe dit systeem werkt."`}
                                 </p>
                                 <button
                                     onClick={() => setIsModalOpen(false)}

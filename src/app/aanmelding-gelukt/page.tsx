@@ -21,7 +21,7 @@ const AanmeldingGeluktPage = () => {
                     </h1>
 
                     <p className="text-xl text-gray-600 mb-12">
-                        Gefeliciteerd! We zijn direct begonnen met het klaarmaken van jouw KapperAI account.
+                        Gefeliciteerd! We zijn direct begonnen met het klaarmaken van jouw VerhuizerAI account.
                     </p>
 
                     <div className="bg-blue-50 border border-blue-100 rounded-2xl p-8 mb-12 text-left">
@@ -35,7 +35,7 @@ const AanmeldingGeluktPage = () => {
                                 <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0 font-bold">1</div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 mb-1">Check je e-mail</h3>
-                                    <p className="text-gray-600">Je ontvangt een e-mail van <strong>AIreclamestudio</strong> met jouw inloggegevens. Check ook je <u>spamfolder</u>.</p>
+                                    <p className="text-gray-600">Je ontvangt een e-mail van <strong>VerhuizerAI</strong> met jouw inloggegevens. Check ook je <u>spamfolder</u>.</p>
                                 </div>
                             </div>
 
@@ -65,7 +65,7 @@ const AanmeldingGeluktPage = () => {
                             Terug naar Home
                         </Link>
                         <Link
-                            href="https://app.kapperai.nl"
+                            href="https://app.verhuizerai.nl"
                             className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
                         >
                             Naar Inloggen <BsArrowRight className="ml-2" />

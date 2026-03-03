@@ -6,6 +6,7 @@ import { heroDetails } from '@/data/hero';
 import Highlight from './Highlight';
 import VoiceDemo from './VoiceDemo';
 import FreeTrialModal from './FreeTrialModal';
+import Link from 'next/link';
 import LightRays from './LightRays';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import RotatingText from './RotatingText';
@@ -57,25 +58,35 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
+                    className="mb-4"
+                >
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-foreground/5 text-foreground/60 text-sm md:text-base font-semibold tracking-wide uppercase">
+                        jouw groeipartner voor het ai tijdperk
+                    </span>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
                 >
                     <h1 className="text-4xl md:text-7xl md:leading-tight font-extrabold font-heading text-foreground max-w-lg md:max-w-5xl mx-auto">
                         <motion.span
                             style={{ x: xLeft, opacity, display: 'inline-block' }}
                             className="mr-2"
                         >
-                            De grootste kans voor&nbsp;<Highlight color="primary">salons</Highlight>
+                            De grootste kans voor&nbsp;<Highlight color="primary">restaurants</Highlight>
                         </motion.span>
                         <br className="hidden md:block" />
                         <motion.span
                             style={{ x: xRight, opacity, display: 'inline-block' }}
                         >
-                            sinds de uitvinding van de
+                            sinds de uitvinding van
                         </motion.span>
                         <br className="hidden md:block" />
                         <motion.span
                             style={{ x: xLeft, opacity, display: 'inline-block' }}
                         >
-                            <Highlight color="secondary">nagellak</Highlight>.
+                            <Highlight color="secondary">gesneden brood</Highlight>.
                         </motion.span>
                     </h1>
                 </motion.div>
@@ -101,20 +112,20 @@ const Hero: React.FC = () => {
 
                         <RotatingText
                             texts={[
-                                'Winst uit elke Behandeling 💆‍♀️',
-                                'Alles-in-1 Systeem ✨',
-                                'Nooit Meer Gemiste Afspraken 📅',
-                                'Geknipt voor Jouw Business ✂️',
-                                'Ondernemen Zonder Zorgen 🚀',
-                                'Je Salon in je Broekzak 📱',
-                                'Jouw AI Receptioniste 🤖',
-                                'Je Cijfers Strak in de Lak 💅',
-                                'Geen Gedoe Met Facturen 🧾',
+                                'Meer Reserveringen 🍽️',
+                                'Volle Zaal 🍷',
+                                'Geen Gemiste Oproepen 📞',
+                                'Blije Gasten 😊',
+                                'Automatische Bevestiging 📧',
+                                'Slimme Reviews ⭐',
+                                'Meer Tijd, Minder Stress 🧘',
+                                'Hogere Omzet 📈',
+                                'Professionele Uitstraling ✨',
+                                'Klantcontact Automatisering 🤖',
                                 'Alle Tools in 1 App 📱',
-                                'Meer Vrijheid, Minder Stress 🧘',
-                                '100% Jouw Eigen Stijl 🎨',
-                                'Klanten & AI in 1 Systeem 🤝',
-                                'Volgeboekte Agenda 📈'
+                                '100% Jouw Huisstijl 🎨',
+                                'Gasten & AI Samen 🤝',
+                                'Ondernemen Zonder Zorgen 🚀'
                             ]}
                             mainClassName="px-2 sm:px-3 bg-[#0EA5E9] text-white overflow-hidden py-0.5 sm:py-1 justify-center rounded-lg shadow-md"
                             staggerFrom="last"

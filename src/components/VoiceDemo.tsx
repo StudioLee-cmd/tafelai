@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import Vapi from '@vapi-ai/web';
 
-const vapi = new Vapi("5cf7462d-30fe-4d70-9ea1-89ce0bd65ec5"); // Public Key
+const vapi = new Vapi("5cf7462d-30fe-4d70-9ea1-89ce0bd65ec5"); // Master Account Public Key
 
-const assistantId = "9f646537-0e3b-4b3a-a024-e6e32c5cd60a"; // Assistant ID from Dakdekker AI
+const assistantId = "62379e9a-4f1b-4a20-820d-1f8c894132bd"; // Assistant ID for TafelAI
 
 const VoiceDemo: React.FC = () => {
     const [isCalling, setIsCalling] = useState(false);
@@ -26,7 +26,7 @@ const VoiceDemo: React.FC = () => {
             setIsCalling(false);
         };
 
-        const onError = (e: any) => {
+        const onError = (e: unknown) => {
             console.error('Vapi Error:', e);
             setStatus("Status: Fout opgetreden");
             setIsCalling(false);
@@ -60,28 +60,7 @@ const VoiceDemo: React.FC = () => {
 
     return (
         <div className="flex flex-col items-center gap-2">
-            <style jsx>{`
-                @keyframes shine {
-                    0% { transform: translateX(-100%) skewX(-15deg); }
-                    15% { transform: translateX(100%) skewX(-15deg); }
-                    100% { transform: translateX(100%) skewX(-15deg); }
-                }
-                .btn-shine {
-                    position: relative;
-                    overflow: hidden;
-                }
-                .btn-shine::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 50%;
-                    height: 100%;
-                    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
-                    transform: skewX(-15deg);
-                    animation: shine 3s infinite;
-                }
-            `}</style>
+
             <button
                 onClick={handleClick}
                 className={`

@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createMollieClient } from '@mollie/api-client';
+import { siteDetails } from '@/data/siteDetails';
 
 export const dynamic = 'force-dynamic';
 
@@ -17,7 +18,7 @@ export async function POST(request: Request) {
             apiKey: process.env.MOLLIE_API_KEY,
         });
 
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+        const baseUrl = siteDetails.siteUrl.replace(/\/$/, ''); // remove trailing slash
 
         // Format price to string '0.00' as expected by Mollie
         const formattedPrice = Number(price).toFixed(2);
@@ -36,8 +37,9 @@ export async function POST(request: Request) {
         });
 
         return NextResponse.json({ checkoutUrl: payment.getCheckoutUrl() });
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Mollie payment error:', error);
-        return NextResponse.json({ error: error.message || 'Payment creation failed' }, { status: 500 });
+        const message = error instanceof Error ? error.message : 'Payment creation failed';
+        return NextResponse.json({ error: message }, { status: 500 });
     }
 }

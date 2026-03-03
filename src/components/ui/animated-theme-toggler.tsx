@@ -40,14 +40,14 @@ export function AnimatedThemeToggler({
         );
 
         // Check if View Transitions API is supported
-        // @ts-ignore - View Transitions API is not yet in TypeScript types
+        // @ts-expect-error - View Transitions API is not yet in TypeScript types
         if (!document.startViewTransition) {
             // Fallback for browsers without View Transitions
             setTheme(isDark ? "light" : "dark");
             return;
         }
 
-        // @ts-ignore
+        // @ts-expect-error
         const transition = document.startViewTransition(() => {
             setTheme(isDark ? "light" : "dark");
         });

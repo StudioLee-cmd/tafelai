@@ -19,8 +19,8 @@ const FAQ: React.FC = () => {
                         <p className="text-[var(--foreground-accent)] font-medium mb-2">
                             Staat je vraag er niet bij?
                         </p>
-                        <a href="mailto:Info@dakdekkerai.nl" className="text-xl lg:text-2xl text-primary font-bold hover:text-primary-accent transition-colors">
-                            Info@dakdekkerai.nl
+                        <a href="mailto:tim@tafelai.nl" className="text-xl lg:text-2xl text-primary font-bold hover:text-primary-accent transition-colors">
+                            tim@tafelai.nl
                         </a>
                     </div>
 
@@ -29,9 +29,9 @@ const FAQ: React.FC = () => {
                         {/* Decorative shine */}
                         <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-yellow-500/20 blur-xl rounded-full"></div>
 
-                        <h3 className="text-xl font-bold mb-3 relative z-10">Klaar om je bedrijf te transformeren?</h3>
+                        <h3 className="text-xl font-bold mb-3 relative z-10">Klaar om je restaurant te transformeren?</h3>
                         <p className="text-gray-300 mb-6 text-sm leading-relaxed relative z-10">
-                            Gemiddeld besparen onze klanten 10+ uur per week aan administratie en telefoontjes. Daarnaast heb je geen gaten meer in je agenda door no-shows of gemiste oproepen. Eén extra gevulde stoel per week dekt vaak de kosten al.
+                            Gemiddeld besparen onze klanten 8+ uur per week aan administratie en telefoontjes. Daarnaast heb je geen lege tafels meer door no-shows. Eén extra reservering per week dekt vaak de kosten al.
                         </p>
                         <a href="#pricing" className="relative z-10 inline-block w-full">
                             <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold hover:from-yellow-300 hover:to-yellow-500 transition-all shadow-lg transform hover:scale-[1.02]">

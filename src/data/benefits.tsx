@@ -11,27 +11,27 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "Meertalig & Intelligent",
-                description: "Spreekt vloeiend Nederlands, Engels & meer. Herkent direct de taal van de beller.",
+                description: "Spreekt vloeiend Nederlands, Engels & meer. Herkent direct de taal van de gast.",
                 icon: <FiGlobe size={26} />
             },
             {
                 title: "Klantgeheugen & Historie",
-                description: "Herkent terugkerende klanten en heeft direct inzicht in alle eerdere klussen en klantdata.",
+                description: "Herkent terugkerende gasten en heeft direct inzicht in alle eerdere reserveringen en dieetwensen.",
                 icon: <FiUsers size={26} />
             },
             {
                 title: "Slimme Routing",
-                description: "Verbind door naar de juiste persoon op basis van specifieke woorden of situaties.",
+                description: "Verbind door naar de keuken of manager op basis van specifieke vragen.",
                 icon: <FiZap size={26} />
             },
             {
                 title: "Zelfstandig Uitbellen",
-                description: "Kan zelf klanten bellen voor opvolging, bevestigingen of het inplannen van afspraken.",
+                description: "Kan zelf gasten bellen voor bevestigingen of het verzetten van reserveringen.",
                 icon: <FiPhoneMissed size={26} />
             },
             {
                 title: "Multi-Agenda Beheer",
-                description: "Real-time sync met meerdere agenda's. Boekt direct zonder dubbele afspraken te maken.",
+                description: "Real-time sync met je reserveringssysteem. Boekt direct zonder dubbele tafels te maken.",
                 icon: <FiCalendar size={26} />
             },
             {
@@ -48,7 +48,7 @@ export const benefits: IBenefit[] = [
     {
         title: "Social Media Planner",
         tier: 'basis',
-        description: "De krachtige Social Media Scheduler in app.AIReclameStudio.nl. Connecteert met FB, IG, LinkedIn, TikTok en X.",
+        description: "De krachtige Social Media Scheduler in app.TafelAI.nl. Connecteert met FB, IG, LinkedIn, TikTok en X.",
         bullets: [
             {
                 title: "Posting Engine",
@@ -57,7 +57,7 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Automatisering",
-                description: "Plan en publiceer content automatisch op al je kanalen.",
+                description: "Plan en publiceer je menu en specials automatisch op al je kanalen.",
                 icon: <FiCalendar size={26} />
             },
             {
@@ -88,7 +88,7 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "Automatisering",
-                description: "Verstuurt automatische SMS/Emails voor Google Reviews na een afspraak.",
+                description: "Verstuurt automatische SMS/Emails voor Google Reviews na een diner.",
                 icon: <FiStar size={26} />
             },
             {
@@ -116,35 +116,35 @@ export const benefits: IBenefit[] = [
         imageSrc: "/images/benefits/reputatie-manager.png"
     },
 
-    // 4. Factuur AI & Sales Deck AI
+    // 4. Factuur AI & Sales Deck AI -> Menu & Offerte AI
     {
-        title: "Factuur AI & Sales Deck AI",
+        title: "Menu & Offerte AI",
         tier: 'basis',
-        description: "Creëer professionele facturen en overtuigende sales presentaties binnen minuten. Volledig automatisch met AI-gegenereerde visuals.",
+        description: "Creëer professionele offertes voor groepen en events binnen minuten. Volledig automatisch.",
         bullets: [
             {
-                title: "Sales Deck Generator",
-                description: "Maak in 5 minuten een complete verkooppresentatie met custom AI-afbeeldingen.",
+                title: "Event Voorstellen",
+                description: "Maak in 5 minuten een compleet voorstel voor bruiloften of bedrijfsfeesten.",
                 icon: <FiImage size={26} />
             },
             {
                 title: "Slimme Facturen",
-                description: "Vul je pakketten en prijzen in, krijg direct een professionele factuur.",
+                description: "Vul je arrangementen in, krijg direct een professionele factuur.",
                 icon: <FiFileText size={26} />
             },
             {
                 title: "Betalingsherinneringen",
-                description: "Automatische herinneringen bij openstaande facturen verlichten je werkdruk.",
+                description: "Automatische herinneringen voor aanbetalingen.",
                 icon: <FiBell size={26} />
             },
             {
                 title: "Online Betalingen",
-                description: "Klanten betalen direct via iDEAL, creditcard of bankoverschrijving.",
+                description: "Klanten betalen aanbetalingen direct via iDEAL.",
                 icon: <FiCreditCard size={26} />
             },
             {
-                title: "Sneller Betaald",
-                description: "Professionele presentaties + automatische opvolging = minder gedoe.",
+                title: "Meer Omzet",
+                description: "Professionele voorstellen zorgen voor meer groepsreserveringen.",
                 icon: <FiCheckCircle size={26} />,
                 isHighlighted: true
             }
@@ -157,9 +157,9 @@ export const benefits: IBenefit[] = [
 
     // 5. Afspraak Herinneringen
     {
-        title: "Afspraak Herinneringen",
+        title: "Reservering Herinneringen",
         tier: 'basis',
-        description: "Update de Afspraak Herinnering workflows.",
+        description: "Update de Reservering Herinnering workflows.",
         bullets: [
             {
                 title: "No-Show Reductie",
@@ -168,22 +168,22 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Sequenties",
-                description: "Standaard 24u, 1u en 10min herinneringen.",
+                description: "Standaard 24u, 2u en 30min herinneringen.",
                 icon: <FiClock size={26} />
             },
             {
                 title: "Bevelliging",
-                description: "Zorgt dat klanten hun afspraak niet vergeten.",
+                description: "Zorgt dat gasten hun reservering niet vergeten.",
                 icon: <FiShield size={26} />
             },
             {
                 title: "Wachtlijst",
-                description: "Kan geannuleerde plekken opvullen via wachtlijst.",
+                description: "Kan geannuleerde tafels opvullen via wachtlijst.",
                 icon: <FiUsers size={26} />
             },
             {
-                title: "Volle Agenda",
-                description: "Maximaliseer je declarabele uren.",
+                title: "Volle Zaal",
+                description: "Maximaliseer je bezetting.",
                 icon: <FiCalendar size={26} />,
                 isHighlighted: true
             }
@@ -199,27 +199,27 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "Direct Contact",
-                description: "SMS klanten direct als je niet kunt opnemen.",
+                description: "SMS gasten direct als je niet kunt opnemen (tijdens piekuren).",
                 icon: <FiMessageSquare size={26} />
             },
             {
-                title: "Red de Lead",
-                description: "Voorkom dat klanten naar de concurrent bellen.",
+                title: "Red de Reservering",
+                description: "Voorkom dat gasten naar een ander restaurant bellen.",
                 icon: <FiLifeBuoy size={26} />
             },
             {
                 title: "Gespreksstarter",
-                description: "Start automatisch een conversatie om de afspraak alsnog te maken.",
+                description: "Start automatisch een conversatie om de reservering alsnog te maken.",
                 icon: <FiShare2 size={26} />
             },
             {
                 title: "Altijd Aan",
-                description: "Werkt 24/7, ook in het weekend.",
+                description: "Werkt 24/7, ook als je gesloten bent.",
                 icon: <FiCpu size={26} />
             },
             {
                 title: "Omzetbehoud",
-                description: "Elke geredde lead is extra omzet.",
+                description: "Elke geredde reservering is extra omzet.",
                 icon: <FiTrendingUp size={26} />,
                 isHighlighted: true
             }
@@ -235,12 +235,12 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "24/7 Q&A",
-                description: "Antwoordt vragen op basis van jouw Kennisbank.",
+                description: "Antwoordt vragen over menu, allergenen en openingstijden.",
                 icon: <FiMessageSquare size={26} />
             },
             {
-                title: "Lead Capture",
-                description: "Vangt leads direct op in je CRM.",
+                title: "Reserveringen",
+                description: "Neemt reserveringen aan direct in de chat.",
                 icon: <FiUsers size={26} />
             },
             {
@@ -250,12 +250,12 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Conversie",
-                description: "Zet websitebezoekers om in afspraken.",
+                description: "Zet websitebezoekers om in gasten.",
                 icon: <FiTarget size={26} />
             },
             {
                 title: "Altijd Bereikbaar",
-                description: "Je website is nooit meer gesloten.",
+                description: "Je restaurant is online nooit gesloten.",
                 icon: <FiCheckCircle size={26} />,
                 isHighlighted: true
             }
@@ -271,22 +271,22 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "If This, Then That",
-                description: "Triggers complexe acties over apps heen (Email -> Trello -> Slack).",
+                description: "Triggers complexe acties over apps heen (Reservering -> Email -> Keuken).",
                 icon: <FiCpu size={26} />
             },
             {
-                title: "Lead Scraping",
-                description: "Vindt en verrijkt leads automatisch.",
+                title: "Review Vragen",
+                description: "Vraag automatisch om reviews na een bezoek.",
                 icon: <FiTarget size={26} />
             },
             {
                 title: "Cross-Platform",
-                description: "Sync Calendar, Email, Socials en Facturatie.",
+                description: "Sync Agenda, Email, Socials en Facturatie.",
                 icon: <FiRefreshCw size={26} />
             },
             {
                 title: "Email Outreach",
-                description: "Automatische nurturing sequenties die stoppen bij antwoord.",
+                description: "Automatische nurturing sequenties voor vaste gasten.",
                 icon: <FiMail size={26} />
             },
             {
@@ -307,7 +307,7 @@ export const benefits: IBenefit[] = [
         bullets: [
             {
                 title: "Slimme Ideeën",
-                description: "Genereert onderwerpen gebaseerd op jouw specifieke Niche.",
+                description: "Genereert onderwerpen gebaseerd op de Horeca.",
                 icon: <FiTool size={26} />
             },
             {
@@ -317,7 +317,7 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Zoekwoord Exploratie",
-                description: "Vindt kansen met weinig concurrentie en veel volume.",
+                description: "Vindt kansen zoals 'Beste Restaurant [Stad]'.",
                 icon: <FiTarget size={26} />
             },
             {
@@ -327,7 +327,7 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Google Dominantie",
-                description: "Wordt de autoriteit in jouw markt.",
+                description: "Wordt de nummer #1 in jouw regio.",
                 icon: <FiTrendingUp size={26} />,
                 isHighlighted: true
             }
@@ -343,7 +343,7 @@ export const benefits: IBenefit[] = [
     {
         title: "Social Media Content",
         tier: 'basis',
-        description: "Genereert indrukwekkende visuals en captions voor al je kanalen.",
+        description: "Genereert smakelijke visuals en captions voor al je kanalen.",
         bullets: [
             {
                 title: "Multi-Format",
@@ -352,12 +352,12 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Visuele Stijlen",
-                description: "Kies uit Fotorealistisch, 3D Render, Minimalist of Artistiek.",
+                description: "Kies uit Food Photography, Sfeervol, Modern of Artistiek.",
                 icon: <FiImage size={26} />
             },
             {
                 title: "Video Generatie",
-                description: "Zet tekst om in korte video's met AI voiceovers.",
+                description: "Zet je menu om in korte video's met AI voiceovers.",
                 icon: <FiVideo size={26} />
             },
             {
@@ -377,20 +377,20 @@ export const benefits: IBenefit[] = [
         videoSrc: "/videos/benefits/reclame-ai.mp4"
     },
 
-    // 11. Offertes & Contracten
+    // 11. Offertes & Contracten -> Event Voorstellen
     {
-        title: "Offertes & Contracten",
+        title: "Event Voorstellen",
         tier: 'basis',
-        description: "Genereert visuele verkooppresentaties en contracten die indruk maken.",
+        description: "Genereert visuele voorstellen die indruk maken op groepen en bedrijven.",
         bullets: [
             {
                 title: "Dynamische Prijzen",
-                description: "Ondersteunt '3 Pakketten' model of 'Vrije invoer'.",
+                description: "Ondersteunt verschillende arrangementen en opties.",
                 icon: <FiPieChart size={26} />
             },
             {
                 title: "Visuele Presentaties",
-                description: "Maakt een visuele slide deck i.p.v. een saaie PDF.",
+                description: "Maak een visuele slide deck van je menu i.p.v. een saaie lijst.",
                 icon: <FiImage size={26} />
             },
             {
@@ -400,18 +400,18 @@ export const benefits: IBenefit[] = [
             },
             {
                 title: "Niche Pitching",
-                description: "Schrijft Probleem/Oplossing slides op maat voor jouw klant.",
+                description: "Schrijft voorstellen op maat voor jouw gast.",
                 icon: <FiTarget size={26} />
             },
             {
                 title: "Conversie",
-                description: "Sluit meer deals met professionele presentaties.",
+                description: "Sluit meer events met professionele presentaties.",
                 icon: <FiCheckCircle size={26} />,
                 isHighlighted: true
             }
         ],
 
-        imageSrc: "/images/benefits/offerte-ai.png"
+        imageSrc: "/images/benefits/factuur-ai.png"
     },
 
     // 12. AI Email Assistent
@@ -519,7 +519,7 @@ export const benefits: IBenefit[] = [
                 isHighlighted: true
             }
         ],
-        imageSrc: "/images/benefits/ad-manager.png"
+        imageSrc: "/images/benefits/ads-ai.png"
     },
 
     // 14. Websites & Funnels

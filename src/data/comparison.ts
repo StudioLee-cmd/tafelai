@@ -31,31 +31,22 @@ export const comparisonData: IComparisonItem[] = [
         description: "Voor video's en reels"
     },
     {
-        role: "CRM & Email Marketing",
+        role: "Reserveringssysteem & Email",
         cost: 200,
-        description: "Vervangt HubSpot & Mailchimp"
+        description: "Vervangt Formitable, TheFork & Mailchimp"
     },
     {
-        role: "Website & Funnel Builder",
+        role: "Website & Menu Builder",
         cost: 100,
         description: "Vervangt Wix, WordPress & Hosting"
     },
     {
-        role: "Social Media Tools",
+        role: "Review & Social Tools",
         cost: 100,
-        description: "Vervangt Hootsuite, Buffer & Later"
-    },
-    {
-        role: "Reserveringssysteem & Kassa",
-        cost: 45,
-        description: "Vervangt Salonized, Treatwell & BarberBooking"
-    },
-    {
-        role: "Agenda & Planning Tools",
-        cost: 25,
-        description: "Vervangt Calendly, Acuity & team-agenda's"
+        description: "Vervangt dure planners & reputatie software",
     }
 ];
 
-export const totalTraditionalCost = 3220;
-export const kapperAICost = 297;
+// Comparison values
+export const totalTraditionalCost = 3000;
+export const tafelAICost = 297;

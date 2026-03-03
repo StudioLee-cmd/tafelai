@@ -65,39 +65,33 @@ const FallingText = () => {
         });
 
         const allWords = [
-            // HERO USPs (DAKDEKKER EDITION)
-            "Meer Winst per Dak 🏠",
+            // HERO USPs (TAFEL EDITION)
+            "Meer Reserveringen 🍽️",
             "Alles-in-1 Systeem 🛠️",
-            "Nooit Meer Gemiste Oproepen 📞",
-            "Je Werkbonnen op Orde 📋",
+            "Geen Gemiste Oproepen 📞",
+            "Volle Zaal 🍷",
             "Ondernemen Zonder Zorgen 🚀",
-            "Je Kantoor in je Broekzak 📱",
-            "Jouw AI Receptioniste 🤖",
-            "Je Cijfers Waterdicht 💧",
-            "Geen Gedoe Met Facturen 🧾",
+            "Restaurant in je Broekzak 📱",
+            "Jouw AI Gastvrouw 🤖",
+            "Administratie op Orde 💡",
+            "Direct Bevestigd ✅",
             "Alle Tools in 1 App 📱",
-            "Meer Vrijheid, Minder Stress 🧘",
-            "100% Jouw Eigen Stijl 🎨",
-            "Klanten & AI in 1 Systeem 🤝",
-            "Volgeboekte Agenda 📈",
-            "Offertes die scoren 📝",
-            "Slapende klanten wakker schudden ⏰",
+            "Meer Vrijheid 🧘",
+            "Jouw Eigen Stijl 🎨",
+            "Blije Gasten 😊",
+            "Reviews die scoren ⭐",
+            "Top Service 👌",
 
-            // DAKDEKKER PUNS & FUN
-            "Minder kantoor, meer dak op 🏠",
-            "Tijd voor koffie & je klus ☕",
-            "Laat de telefoon maar rinkelen (AI pakt op) 📞",
-            "Laat de AI je planning doen 🤖",
-            "Sleutelen, niet telefoneren 🔨",
-            "Geen lekkage in je planning 📅",
-            "Geknipt voor Jouw Business ✂️",
-            "Jij de vakman, AI de rest 👷‍♂️",
-            "Van dakdekker naar top-ondernemer 🚀",
-            "Handen in het haar? Nergens voor nodig! 👐",
-            "Meer omzet in minder tijd ⏳",
-            "Altijd scherp, net als je tools 🔪",
-            "Strakke planning, blije klanten 📅",
-            "Eindelijk rustig lunchen 🥪"
+            // RESTAURANT PUNS & FUN
+            "Lekker bezig 🍳",
+            "Tijd voor passie ❤️",
+            "Laat AI de telefoon doen 📞",
+            "Geen no-shows meer 🚫",
+            "Slimmer plannen 🧠",
+            "Geen dubbele boekingen 📅",
+            "Eindelijk rustig koken 👨‍🍳",
+            "Smakelijke service 😋",
+            "Restaurant van de toekomst 🚀"
         ];
 
         // Pick random 10 unique words
@@ -223,8 +217,8 @@ const FallingText = () => {
 
         // Intercept addEventListener to prevent Matter.js from hijacking the scroll wheel
         const originalAdd = render.canvas.addEventListener;
-        // @ts-ignore
-        render.canvas.addEventListener = (type: string, listener: any, options: any) => {
+        // @ts-expect-error - Override to prevent Matter.js scroll hijacking
+        render.canvas.addEventListener = (type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions) => {
             if (type === 'wheel' || type === 'mousewheel' || type === 'DOMMouseScroll') return;
             originalAdd.call(render.canvas, type, listener, options);
         };
@@ -252,9 +246,9 @@ const FallingText = () => {
             bodies.forEach((body) => {
                 const { x, y } = body.position;
                 const angle = body.angle;
-                // @ts-ignore
+                // @ts-expect-error
                 const { type, color, width: w, height: h, radius: r } = body.plugin;
-                // @ts-ignore
+                // @ts-expect-error
                 const text = body.label;
 
                 ctx.save();
@@ -313,7 +307,7 @@ const FallingText = () => {
 
                 } else if (type === 'pill') {
                     ctx.beginPath();
-                    // @ts-ignore
+                    // @ts-expect-error
                     ctx.roundRect(-w / 2, -h / 2, w, h, h / 2);
                     ctx.fill();
 
@@ -321,9 +315,9 @@ const FallingText = () => {
                     const thick = w / 2.5;
                     const len = w;
                     ctx.beginPath();
-                    // @ts-ignore
+                    // @ts-expect-error
                     ctx.roundRect(-len / 2, -thick / 2, len, thick, thick / 2);
-                    // @ts-ignore
+                    // @ts-expect-error
                     ctx.roundRect(-thick / 2, -len / 2, thick, len, thick / 2);
                     ctx.fill();
                 }
@@ -341,7 +335,7 @@ const FallingText = () => {
                 else if (type === 'cloud') maxWidth = r * 1.3;
 
                 const words = (text || "").split(' ');
-                let lines = [];
+                const lines: string[] = [];
                 let currentLine = words[0];
 
                 for (let i = 1; i < words.length; i++) {
@@ -359,7 +353,7 @@ const FallingText = () => {
                 // Draw Lines Centered
                 const lineHeight = isMobile ? 12 : 18;
                 const totalHeight = lines.length * lineHeight;
-                let startY = -(totalHeight / 2) + (lineHeight / 2);
+                const startY = -(totalHeight / 2) + (lineHeight / 2);
 
                 lines.forEach((line, i) => {
                     ctx.fillText(line, 0, startY + (i * lineHeight));

@@ -12,7 +12,7 @@ const GuaranteeSection: React.FC = () => {
 
                 <h3 className="text-2xl lg:text-3xl font-bold text-green-100 mb-6 relative z-10 flex items-center justify-center gap-3">
                     <BsShieldCheck className="text-green-400" />
-                    De "Groei-of-Geld-Terug" Garantie
+                    De &ldquo;Groei-of-Geld-Terug&rdquo; Garantie
                 </h3>
 
                 <p className="text-green-200 font-medium mb-8 max-w-2xl mx-auto relative z-10">
@@ -32,13 +32,13 @@ const GuaranteeSection: React.FC = () => {
                         <ul className="text-green-200 text-sm space-y-2 list-disc list-inside">
                             <li><strong>Level 2 & 3:</strong> Geen groei in bereik/AI? Geld terug.</li>
                             <li><strong>Level 3 (Reviews):</strong> Geen toename reviews? Geld terug.</li>
-                            <li><strong>Level 4:</strong> KPI's niet behaald? Geld terug.</li>
+                            <li><strong>Level 4:</strong> KPI&apos;s niet behaald? Geld terug.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="mt-8 text-green-300 text-sm italic relative z-10 font-medium">
-                    "Het risico ligt 100% bij ons. Jij hebt niets te verliezen, behalve je huidige chaos."
+                    {`"Het risico ligt 100% bij ons. Jij hebt niets te verliezen, behalve je huidige chaos."`}
                 </div>
             </div>
         </div>

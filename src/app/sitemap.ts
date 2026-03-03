@@ -3,7 +3,7 @@ import { posts } from '@/data/posts'
 import { authors } from '@/data/authors'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://dakdekkerai.nl'
+    const baseUrl = 'https://tafelai.nl'
 
     // Static routes
     const staticRoutes = [

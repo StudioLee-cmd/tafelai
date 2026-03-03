@@ -17,6 +17,7 @@ const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat' });
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteDetails.siteUrl),
   title: siteDetails.metadata.title,
   description: siteDetails.metadata.description,
   openGraph: {
@@ -50,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="nl" suppressHydrationWarning>
       <body
         className={`${manrope.className} ${sourceSans.className} ${outfit.variable} ${caveat.variable} antialiased`}
       >

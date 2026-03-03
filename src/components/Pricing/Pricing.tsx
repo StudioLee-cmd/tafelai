@@ -51,7 +51,7 @@ const UnlimitedOptionBlock = () => {
                                 Upgrade naar onbeperkt gebruik van <strong>Voice AI en alle workflows</strong>.
                             </p>
                             <p className="text-xs text-gray-400 italic max-w-2xl leading-relaxed">
-                                *Kan op elk moment wijzigen. Exclusief de premium-versies van de AI's (Credits). Bevat wel alle standaard tools voor dagelijks gebruik.
+                                *Kan op elk moment wijzigen. Exclusief de premium-versies van de AI&apos;s (Credits). Bevat wel alle standaard tools voor dagelijks gebruik.
                             </p>
                         </div>
 
@@ -214,7 +214,7 @@ const Pricing: React.FC = () => {
                                         Upgrade naar onbeperkt gebruik van <strong className="text-[var(--foreground)]">Voice AI en alle workflows</strong>.
                                     </p>
                                     <p className="text-xs text-[var(--foreground-accent)] italic max-w-2xl leading-relaxed">
-                                        *Kan op elk moment wijzigen. Exclusief de premium-versies van de AI's (Credits). Bevat wel alle standaard tools voor dagelijks gebruik.
+                                        *Kan op elk moment wijzigen. Exclusief de premium-versies van de AI&apos;s (Credits). Bevat wel alle standaard tools voor dagelijks gebruik.
                                     </p>
                                 </div>
 
