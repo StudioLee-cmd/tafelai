@@ -65,33 +65,39 @@ const FallingText = () => {
         });
 
         const allWords = [
-            // HERO USPs (TAFEL EDITION)
-            "Meer Reserveringen 🍽️",
-            "Alles-in-1 Systeem 🛠️",
-            "Geen Gemiste Oproepen 📞",
-            "Volle Zaal 🍷",
+            // HERO USPs (RESTAURANT EDITION)
+            "Meer Omzet per Tafel 🍽️",
+            "Alles-in-1 Systeem 📱",
+            "Nooit Meer Gemiste Reserveringen 📅",
+            "Je Keuken op Orde 👨‍🍳",
             "Ondernemen Zonder Zorgen 🚀",
-            "Restaurant in je Broekzak 📱",
-            "Jouw AI Gastvrouw 🤖",
-            "Administratie op Orde 💡",
-            "Direct Bevestigd ✅",
+            "Je Restaurant in je Broekzak 📱",
+            "Jouw AI Gastheer 🤖",
+            "Stop Omzetlekkages 💸",
+            "Geen Gedoe Met Facturen 🧾",
             "Alle Tools in 1 App 📱",
-            "Meer Vrijheid 🧘",
-            "Jouw Eigen Stijl 🎨",
-            "Blije Gasten 😊",
-            "Reviews die scoren ⭐",
-            "Top Service 👌",
+            "Meer Vrijheid, Minder Stress 🧘",
+            "100% Jouw Eigen Concept 🎨",
+            "Gasten & AI in 1 Systeem 🤝",
+            "Volgeboekte Zaal 📈",
+            "Gasten die terugkomen als een boemerang 🪃",
+            "Slapende gasten wakker schudden ⏰",
 
             // RESTAURANT PUNS & FUN
-            "Lekker bezig 🍳",
-            "Tijd voor passie ❤️",
-            "Laat AI de telefoon doen 📞",
-            "Geen no-shows meer 🚫",
-            "Slimmer plannen 🧠",
-            "Geen dubbele boekingen 📅",
-            "Eindelijk rustig koken 👨‍🍳",
-            "Smakelijke service 😋",
-            "Restaurant van de toekomst 🚀"
+            "Minder bellen, meer serveren 🍽️",
+            "Tijd voor espresso & mise-en-place ☕",
+            "Laat de telefoon maar rinkelen (AI pakt op) 📞",
+            "Laat de AI je tafels vullen 🤖",
+            "Koken, niet telefoneren 🍳",
+            "Geen wachtrij in je planning 📅",
+            "Geserveerd: meer omzet & minder stress 🍾",
+            "Jij de chef, AI de rest 🤖",
+            "Van restauranthouder naar top-ondernemer 🚀",
+            "Handen vol messen? AI helpt 🔪",
+            "Meer gasten in minder tijd ⏳",
+            "Altijd vers, net als je menu 🥗",
+            "Strakke service, strakke planning 🍷",
+            "Eindelijk rustig op vrijdagmiddag 🌊"
         ];
 
         // Pick random 10 unique words
