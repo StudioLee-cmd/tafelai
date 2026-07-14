@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://verhuizerai.nl/sitemap.xml
+Sitemap: https://www.tafelai.nl/sitemap.xml
