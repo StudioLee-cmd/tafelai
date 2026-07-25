@@ -1,10 +1,11 @@
 "use client";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useState } from 'react';
 import { BsCheckCircleFill, BsStars } from "react-icons/bs";
 import PricingColumn from "./PricingColumn";
-import FreeTrialModal from "../FreeTrialModal";
-import PurchaseOptionsModal from "../PurchaseOptionsModal";
+const FreeTrialModalLazy = dynamic(() => import('../FreeTrialModal'), { ssr: false });
+const PurchaseOptionsModalLazy = dynamic(() => import('../PurchaseOptionsModal'), { ssr: false });
 import GuaranteeSection from "./GuaranteeSection";
 import { tiers } from "@/data/pricing";
 import { IPricing } from "@/types";
@@ -294,18 +295,18 @@ const Pricing: React.FC = () => {
                 {/* Guarantee Section */}
                 <GuaranteeSection />
 
-                <FreeTrialModal
+                {isModalOpen && <FreeTrialModalLazy
                     isOpen={isModalOpen}
                     onClose={() => setIsModalOpen(false)}
                     isAnnual={isAnnual}
-                />
+                />}
 
-                <PurchaseOptionsModal
+                {isOptionsModalOpen && <PurchaseOptionsModalLazy
                     isOpen={isOptionsModalOpen}
                     onClose={() => setIsOptionsModalOpen(false)}
                     tier={selectedOptionTier}
                     isAnnual={isAnnual}
-                />
+                />}
             </div>
         </div>
     )
