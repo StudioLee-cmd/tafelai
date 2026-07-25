@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Static routes
     const staticRoutes = [
-        '',
+        '/',
         '/blog',
         '/gratis-scan',
         '/review-pakket',
@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
-        priority: route === '' ? 1 : 0.8,
+        priority: route === '/' ? 1 : 0.8,
     }))
 
     // Dynamic blog post routes

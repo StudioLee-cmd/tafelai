@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: `Privacyverklaring | ${siteDetails.siteName}`,
     description: `Hoe ${siteDetails.siteName} omgaat met de gegevens van ${siteDetails.niche.toLowerCase()}: wat we bewaren, waarvoor we het gebruiken en welke rechten je hebt volgens de AVG.`,
+    alternates: { canonical: `${siteDetails.siteUrl}privacy` },
 };
 
 const PrivacyPage: React.FC = () => {

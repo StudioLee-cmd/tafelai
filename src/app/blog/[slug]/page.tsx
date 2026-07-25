@@ -7,6 +7,38 @@ import { getAuthorBySlug } from '@/data/authors';
 import Container from '@/components/Container';
 import BlogContent from '@/components/BlogContent';
 import { FiArrowLeft, FiClock } from 'react-icons/fi';
+import type { Metadata } from 'next';
+import { siteDetails } from '@/data/siteDetails';
+
+export async function generateMetadata(
+    { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+    const { slug } = await params;
+    const post = getPostBySlug(slug);
+    if (!post) return {};
+    const base = siteDetails.siteUrl.replace(/\/$/, '');
+    const url = `${base}/blog/${slug}`;
+    const image = post.image?.startsWith('http') ? post.image : `${base}${post.image}`;
+    return {
+        title: post.title,
+        description: post.excerpt,
+        alternates: { canonical: url },
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            url,
+            type: 'article',
+            locale: 'nl_NL',
+            images: [{ url: image }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.excerpt,
+            images: [image],
+        },
+    };
+}
 
 export async function generateStaticParams() {
     const posts = getAllPosts();

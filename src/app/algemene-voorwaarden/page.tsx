@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: `Algemene voorwaarden | ${siteDetails.siteName}`,
     description: `De voorwaarden van ${siteDetails.siteName}: afspraken over het abonnement, opzeggen, aansprakelijkheid en het gebruik van de AI-assistent voor ${siteDetails.niche.toLowerCase()}.`,
+    alternates: { canonical: `${siteDetails.siteUrl}algemene-voorwaarden` },
 };
 
 const TermsPage: React.FC = () => {
