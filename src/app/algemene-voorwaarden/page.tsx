@@ -2,6 +2,12 @@ import React from "react";
 import Container from "@/components/Container";
 import { siteDetails } from "@/data/siteDetails";
 import { footerDetails } from "@/data/footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: `Algemene voorwaarden | ${siteDetails.siteName}`,
+    description: `De voorwaarden van ${siteDetails.siteName}: afspraken over het abonnement, opzeggen, aansprakelijkheid en het gebruik van de AI-assistent voor ${siteDetails.niche.toLowerCase()}.`,
+};
 
 const TermsPage: React.FC = () => {
     return (

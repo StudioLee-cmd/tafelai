@@ -4,6 +4,13 @@ import Image from 'next/image';
 import { getAllPosts } from '@/utils/posts';
 import { getAuthorBySlug } from '@/data/authors';
 import Container from '@/components/Container';
+import type { Metadata } from "next";
+import { siteDetails } from "@/data/siteDetails";
+
+export const metadata: Metadata = {
+    title: `Blog over AI voor ${siteDetails.niche.toLowerCase()} | ${siteDetails.siteName}`,
+    description: `Artikelen en tips over AI voor ${siteDetails.niche.toLowerCase()}: minder tijd aan de telefoon, slimmer plannen en meer reviews verzamelen zonder extra werk.`,
+};
 
 const BlogPage = async () => {
     const posts = await Promise.resolve(getAllPosts());
