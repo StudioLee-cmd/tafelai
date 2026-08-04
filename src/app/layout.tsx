@@ -10,6 +10,7 @@ import { siteDetails } from '@/data/siteDetails';
 import { Analytics } from "@vercel/analytics/next"
 
 import "./globals.css";
+import CookieBanner from "@/components/CookieBanner";
 
 const sourceSans = Source_Sans_3({ subsets: ['latin'] });
 const caveat = Caveat({ subsets: ['latin'], weight: ['700'], variable: '--font-caveat' });
@@ -63,7 +64,15 @@ export default function RootLayout({
           <Footer />
           <Analytics />
         </ThemeProvider>
+          {/* De cookie-deur. Hangt aan `chatWidgetId` en NIET hardcoded zoals bij de zusjes, omdat
+              tafelai nog geen chat heeft: de component toont z'n banner zodra 'ie mount (de
+              useEffect kijkt niet naar widgetId), dus een lege prop zou hier een banner tonen die
+              belooft dat we cookies zetten voor een chatfunctie die er niet is. Chat uit → geen
+              cookies → geen banner. Vul `chatWidgetId` in siteDetails en de deur staat er meteen,
+              vóór de widget laadt. Zelfde vorm als de GoogleAnalytics-regel hierboven. */}
+          {siteDetails.chatWidgetId && <CookieBanner widgetId={siteDetails.chatWidgetId} />}
       </body>
     </html>
   );
 }
+// cookie-banner v4

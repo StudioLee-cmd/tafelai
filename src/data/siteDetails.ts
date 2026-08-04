@@ -10,4 +10,5 @@ export const siteDetails = {
     locale: 'nl-NL',
     siteLogo: '/images/logo-transparent.png',
     googleAnalyticsId: '', // e.g. G-XXXXXXX,
+    chatWidgetId: '', // HighLevel chat-widget-id. Leeg = geen chat, dus geen cookies en geen banner.
 }
