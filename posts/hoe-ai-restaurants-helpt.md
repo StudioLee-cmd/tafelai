@@ -27,7 +27,7 @@ tags: ["AI", "Efficiëntie", "Horeca"]
             <p>Veel ondernemers denken dat AI hun gastvrijheid wil vervangen. Dat is onzin. Een robot kan (voorlopig) geen wijn inschenken of sfeer maken. Het gaat om het vervangen van het dure, trage kantoorwerk. Onze AI tools vervangen in feite drie partijen:</p>
             <ul>
                 <li><strong>De Telefoniste/Receptioniste:</strong> Een kracht bij de deur kost je al snel €35.000 per jaar. Onze Voice AI (onderdeel van het Elite pakket) neemt 24/7 op, maakt reserveringen, en beantwoordt vragen over het menu en allergenen.</li>
-                <li><strong>Het Marketingbureau:</strong> Wil je meer gasten op dinsdagavond? Vroeger betaalde je een bureau €1.500 per maand. Onze Social Media AI & Tekstschrijver AI regelen je zichtbaarheid. Ze posten heerlijke foto's op Instagram en schrijven blogs.</li>
+                <li><strong>Het Marketingbureau:</strong> Wil je meer gasten op dinsdagavond? Vroeger betaalde je een bureau €1.500 per maand. Onze Social Media AI & SEO Blog AI regelen je zichtbaarheid. Ze posten heerlijke foto's op Instagram en schrijven blogs.</li>
                 <li><strong>De Boekhouder (deels):</strong> Facturatie AI koppelt alles aan elkaar. Geen gedoe met bonnetjes meer, facturen voor zakelijke lunches worden automatisch verstuurd.</li>
             </ul>
             

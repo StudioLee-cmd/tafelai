@@ -16,7 +16,7 @@ tags: ["Marketing", "Reviews", "Groei"]
             <p>Het resultaat? Je levert topkwaliteit, maar online ziet niemand dat. Je concurrent, die matig eten serveert maar wel actief reviews verzamelt, zit voller dan jij.</p>
             
             <h2>De Oplossing: Volledige Automatisering met TafelAI</h2>
-            <p>Onze Reputatie Manager AI lost dit probleem op. De volgende ochtend (of een uur na vertrek) krijgt de gast automatisch een berichtje. Geen saaie mail, maar een persoonlijk appje of SMS.</p>
+            <p>Onze Reputatie Manager lost dit probleem op. De volgende ochtend (of een uur na vertrek) krijgt de gast automatisch een berichtje. Geen saaie mail, maar een persoonlijk appje of SMS.</p>
             <blockquote>"Hoi [Naam], bedankt dat je gisteren bij [Restaurant Naam] was! We hopen dat je hebt genoten. Jouw mening helpt ons enorm. Zou je ons willen beoordelen?"</blockquote>
             
             <h3>De "Review Firewall": Je geheime wapen</h3>
